@@ -528,7 +528,7 @@ em, i, .accent, .accent-italic {
     min-width: 0;
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 1680px) {
     .header-inner {
         grid-template-columns: minmax(0, 1fr) auto;
     }
@@ -569,7 +569,7 @@ em, i, .accent, .accent-italic {
     transition: color 0.4s var(--ease), letter-spacing 0.45s var(--ease);
 }
 
-@media (max-width: 1560px) {
+@media (max-width: 1900px) {
     .brand-mark {
         display: none;
     }
@@ -616,7 +616,7 @@ em, i, .accent, .accent-italic {
     transition: color 0.3s var(--ease), letter-spacing 0.4s var(--ease);
 }
 
-@media (min-width: 1241px) and (max-width: 1420px) {
+@media (min-width: 1681px) and (max-width: 1800px) {
     .nav {
         gap: 10px;
     }
@@ -804,13 +804,13 @@ em, i, .accent, .accent-italic {
     transform: translateY(-7px) rotate(-45deg);
 }
 
-@media (max-width: 1420px) {
+@media (max-width: 1680px) {
     .header-cta .phone-link {
         display: none;
     }
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 1680px) {
     :root {
         --header-h: 72px;
     }
