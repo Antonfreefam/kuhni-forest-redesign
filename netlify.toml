@@ -1,6 +1,6 @@
 # Статический редизайн: https://docs.netlify.com/configure-builds/file-based-configuration/
 [build]
-  publish = "redesign"
+  publish = "docs"
 
 [[headers]]
   for = "/*"
