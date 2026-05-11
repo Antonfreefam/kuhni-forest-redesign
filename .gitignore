@@ -1,0 +1,8 @@
+.DS_Store
+downloaded_site/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+*.log

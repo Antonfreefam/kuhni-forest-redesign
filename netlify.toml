@@ -1,0 +1,9 @@
+# Статический редизайн: https://docs.netlify.com/configure-builds/file-based-configuration/
+[build]
+  publish = "redesign"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"

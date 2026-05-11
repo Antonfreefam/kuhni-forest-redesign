@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ru" class="is-loading">
+<head>
+    <meta charset="UTF-8">
+    <script>(function(){try{var t=localStorage.getItem("forest-theme");if(t!=="light"&&t!=="dark"){t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}document.documentElement.dataset.theme=t;}catch(e){}})();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ФОРЕСТ — Премиальные кухни и мебель на заказ</title>
+    <meta name="description" content="Фабрика премиальной мебели ФОРЕСТ: кухни, гостиные, шкафы и гардеробные на заказ. Собственное производство, авторский дизайн, доставка и установка по России.">
+
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=37">
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header is-light" id="siteHeader">
+    <div class="container header-inner">
+        <a href="/" class="brand" aria-label="ФОРЕСТ — на главную">
+            <span>FOREST</span>
+            <span class="brand-mark">manufactory · 1994</span>
+        </a>
+
+        <nav>
+            <ul class="nav" id="navMenu">
+                <li class="nav-item active"><a class="nav-link" href="/">Главная</a></li>
+                <li class="nav-item has-submenu">
+                    <a class="nav-link" href="pages/katalog/modern.html">Кухни</a>
+                    <ul class="submenu">
+                        <li><a href="pages/katalog/modern.html">Современный стиль</a></li>
+                        <li><a href="pages/katalog/neoclassic.html">Неоклассика</a></li>
+                        <li><a href="pages/katalog/classic.html">Классика</a></li>
+                        <li><a href="pages/katalog/projects.html">Проекты</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-submenu">
+                    <a class="nav-link" href="pages/mebel/living-rooms.html">Мебель</a>
+                    <ul class="submenu">
+                        <li><a href="pages/mebel/living-rooms.html">Гостиные</a></li>
+                        <li><a href="pages/mebel/hallways.html">Прихожие</a></li>
+                        <li><a href="pages/mebel/wardrobes.html">Шкафы и гардеробные</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="pages/informatciia/about.html">О компании</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/kontakty/contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-cta">
+            <a class="phone-link" href="tel:+79040252181">+7 (904) 025-21-81</a>
+            <a class="btn btn-ghost" href="#contact">Заказать проект</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Меню">
+                <span class="bar"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="mobile-menu-overlay" id="menuOverlay"></div>
+<aside class="mobile-menu">
+    <a href="/">Главная</a>
+    <a href="pages/katalog/modern.html">Кухни</a>
+    <a class="sub" href="pages/katalog/modern.html">— Современный стиль</a>
+    <a class="sub" href="pages/katalog/neoclassic.html">— Неоклассика</a>
+    <a class="sub" href="pages/katalog/classic.html">— Классика</a>
+    <a class="sub" href="pages/katalog/projects.html">— Проекты</a>
+    <a href="pages/mebel/living-rooms.html">Мебель</a>
+    <a class="sub" href="pages/mebel/living-rooms.html">— Гостиные</a>
+    <a class="sub" href="pages/mebel/hallways.html">— Прихожие</a>
+    <a class="sub" href="pages/mebel/wardrobes.html">— Шкафы и гардеробные</a>
+    <a href="pages/informatciia/about.html">О компании</a>
+    <a href="pages/kontakty/contacts.html">Контакты</a>
+    <a class="btn btn-primary mobile-cta" href="#contact">Заказать проект</a>
+</aside>
+
+<!-- Hero -->
+<section class="hero" id="home">
+    <div class="hero-media">
+        <div class="swiper hero-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img loading="lazy" decoding="async" src="assets/img/hero-kitchen.jpg" alt="Премиальная кухня в современном интерьере">
+                </div>
+                <div class="swiper-slide">
+                    <img loading="lazy" decoding="async" src="assets/img/cat-modern.jpg" alt="Современная кухня">
+                </div>
+                <div class="swiper-slide">
+                    <img loading="lazy" decoding="async" src="assets/img/cat-neoclassic.jpg" alt="Кухня в стиле неоклассика">
+                </div>
+                <div class="swiper-slide">
+                    <img loading="lazy" decoding="async" src="assets/img/project-living.jpg" alt="Гостиная ФОРЕСТ">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container hero-content">
+        <div class="hero-grid">
+            <div>
+                <span class="eyebrow hero-eyebrow">Фабрика премиальной мебели · с 1994 года</span>
+                <h1 class="hero-title">
+                    Кухни,&nbsp;в которых<br>
+                    хочется <em>остановиться</em>.
+                </h1>
+            </div>
+            <div class="hero-aside">
+                <p class="hero-lead">
+                    Авторский дизайн, собственное производство и тщательная установка — каждое
+                    решение создаётся под архитектуру вашего дома и ритм вашей жизни.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#contact">
+                        Заказать дизайн-проект
+                        <svg class="btn-arrow" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M1 7h12M8 2l5 5-5 5"/>
+                        </svg>
+                    </a>
+                    <a class="btn btn-ghost" href="#collections">Смотреть коллекции</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-meta">
+        <span>Premium kitchens</span>
+        <span class="hero-meta-line"></span>
+        <div class="hero-pagination" id="heroPagination"></div>
+        <span class="hero-meta-line"></span>
+        <span>Москва · Тверь</span>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true"></div>
+</section>
+
+<!-- Marquee strip -->
+<div class="strip" aria-hidden="true">
+    <div class="strip-track">
+        <span class="strip-item">Авторский дизайн<span class="strip-dot"></span></span>
+        <span class="strip-item">Массив дерева и шпон<span class="strip-dot"></span></span>
+        <span class="strip-item">Немецкая фурнитура<span class="strip-dot"></span></span>
+        <span class="strip-item">Итальянские фасады<span class="strip-dot"></span></span>
+        <span class="strip-item">Гарантия 5 лет<span class="strip-dot"></span></span>
+        <span class="strip-item">Доставка по России<span class="strip-dot"></span></span>
+        <span class="strip-item">Авторский дизайн<span class="strip-dot"></span></span>
+        <span class="strip-item">Массив дерева и шпон<span class="strip-dot"></span></span>
+        <span class="strip-item">Немецкая фурнитура<span class="strip-dot"></span></span>
+        <span class="strip-item">Итальянские фасады<span class="strip-dot"></span></span>
+        <span class="strip-item">Гарантия 5 лет<span class="strip-dot"></span></span>
+        <span class="strip-item">Доставка по России<span class="strip-dot"></span></span>
+    </div>
+</div>
+
+<!-- Stats -->
+<section class="section section-paper">
+    <div class="container">
+        <div class="stats">
+            <div class="stat reveal">
+                <div class="stat-value">30+</div>
+                <div class="stat-label">лет на рынке</div>
+            </div>
+            <div class="stat reveal">
+                <div class="stat-value">10 000</div>
+                <div class="stat-label">реализованных проектов</div>
+            </div>
+            <div class="stat reveal">
+                <div class="stat-value">12</div>
+                <div class="stat-label">авторских коллекций</div>
+            </div>
+            <div class="stat reveal">
+                <div class="stat-value">5 лет</div>
+                <div class="stat-label">гарантия на изделия</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Collections -->
+<section class="section" id="collections">
+    <div class="container">
+        <div class="section-head section-head--split">
+            <div>
+                <span class="eyebrow">Коллекции</span>
+                <h2 class="section-title">Три направления.<br>Один уровень исполнения.</h2>
+            </div>
+            <p class="section-lede">
+                Каждая коллекция — это десятки проектов, выверенные пропорции и материалы,
+                с которыми мы работаем десятилетиями. Выбирайте характер своей кухни.
+            </p>
+        </div>
+
+        <div class="collections-grid">
+            <a class="collection-card reveal" href="pages/katalog/modern.html">
+                <img loading="lazy" decoding="async" src="assets/img/cat-modern.jpg" alt="Современный стиль">
+                <div class="collection-content">
+                    <span class="collection-num">01 / Modern</span>
+                    <h3 class="collection-title">Современный стиль</h3>
+                    <p class="collection-desc">Чистые линии, скрытая фурнитура, акцент на материалах и фактуре.</p>
+                    <span class="collection-link">
+                        Смотреть коллекцию
+                        <svg viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 6h14M10 1l5 5-5 5"/></svg>
+                    </span>
+                </div>
+            </a>
+
+            <a class="collection-card reveal" href="pages/katalog/neoclassic.html">
+                <img loading="lazy" decoding="async" src="assets/img/cat-neoclassic.jpg" alt="Неоклассика">
+                <div class="collection-content">
+                    <span class="collection-num">02 / Neoclassic</span>
+                    <h3 class="collection-title">Неоклассика</h3>
+                    <p class="collection-desc">Спокойная элегантность, тонкая профилировка и сдержанный декор.</p>
+                    <span class="collection-link">
+                        Смотреть коллекцию
+                        <svg viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 6h14M10 1l5 5-5 5"/></svg>
+                    </span>
+                </div>
+            </a>
+
+            <a class="collection-card reveal" href="pages/katalog/classic.html">
+                <img loading="lazy" decoding="async" src="assets/img/cat-classic.jpg" alt="Классика">
+                <div class="collection-content">
+                    <span class="collection-num">03 / Classic</span>
+                    <h3 class="collection-title">Классика</h3>
+                    <p class="collection-desc">Массив, ручная отделка и архитектурные пропорции вне времени.</p>
+                    <span class="collection-link">
+                        Смотреть коллекцию
+                        <svg viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 6h14M10 1l5 5-5 5"/></svg>
+                    </span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Story -->
+<section class="section section-cream">
+    <div class="container">
+        <div class="story">
+            <div class="story-media reveal">
+                <img loading="lazy" decoding="async" src="assets/img/about-production.jpg" alt="Производство фабрики ФОРЕСТ">
+            </div>
+            <div class="story-text">
+                <span class="eyebrow">О бренде</span>
+                <h2 class="section-title">Мебель, в которой узнаётся&nbsp;человек, а&nbsp;не каталог.</h2>
+                <p>
+                    ФОРЕСТ — собственная фабрика и студия дизайна. Мы делаем кухни, гостиные
+                    и системы хранения с 1994 года и не расширяем линейку ради массовости.
+                </p>
+                <p>
+                    Каждый проект ведёт один дизайнер: от замера и эскиза до сборки на месте.
+                    Это позволяет сохранять качество, в котором не стыдно поставить подпись.
+                </p>
+
+                <ul class="story-list">
+                    <li>
+                        <span class="num">01</span>
+                        <div>
+                            <h4>Собственное производство</h4>
+                            <p>Полный цикл: от раскроя до финишной отделки на нашей фабрике в Твери.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="num">02</span>
+                        <div>
+                            <h4>Премиальные материалы</h4>
+                            <p>Массив дуба и ясеня, итальянские эмали, немецкая фурнитура BLUM и Hettich.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="num">03</span>
+                        <div>
+                            <h4>Авторский дизайн</h4>
+                            <p>Индивидуальные проекты под архитектуру вашего дома и сценарии быта.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section class="section section-dark projects">
+    <div class="container">
+        <div class="section-head section-head--split">
+            <div>
+                <span class="eyebrow">Реализованные проекты</span>
+                <h2 class="section-title">Каждый проект — другой,<br>каждый — наш.</h2>
+            </div>
+            <div class="projects-controls">
+                <button class="swiper-nav projects-prev" aria-label="Предыдущий проект">
+                    <svg viewBox="0 0 18 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 6H1M6 1L1 6l5 5"/></svg>
+                </button>
+                <button class="swiper-nav projects-next" aria-label="Следующий проект">
+                    <svg viewBox="0 0 18 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 6h16M12 1l5 5-5 5"/></svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="swiper projects-rail">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a class="project-card" href="pages/katalog/projects.html">
+                        <img loading="lazy" decoding="async" src="assets/img/project-modern.jpg" alt="Современная кухня">
+                        <div class="project-info">
+                            <span class="project-info-cat">Modern · Москва</span>
+                            <h3>Кухня в современной квартире</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="project-card" href="pages/katalog/projects.html">
+                        <img loading="lazy" decoding="async" src="assets/img/project-neoclassic.jpg" alt="Неоклассическая кухня">
+                        <div class="project-info">
+                            <span class="project-info-cat">Neoclassic · Тверь</span>
+                            <h3>Дом в стиле неоклассика</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="project-card" href="pages/katalog/projects.html">
+                        <img loading="lazy" decoding="async" src="assets/img/project-classic.png" alt="Классическая кухня">
+                        <div class="project-info">
+                            <span class="project-info-cat">Classic · Подмосковье</span>
+                            <h3>Классика с массивом</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="project-card" href="pages/katalog/projects.html">
+                        <img loading="lazy" decoding="async" src="assets/img/project-living.jpg" alt="Гостиная">
+                        <div class="project-info">
+                            <span class="project-info-cat">Living · Москва</span>
+                            <h3>Гостиная в общей композиции</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="project-card" href="pages/katalog/projects.html">
+                        <img loading="lazy" decoding="async" src="assets/img/mebel-wardrobe.jpg" alt="Гардеробная">
+                        <div class="project-info">
+                            <span class="project-info-cat">Storage · Москва</span>
+                            <h3>Гардеробная под ключ</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="project-card" href="pages/katalog/projects.html">
+                        <img loading="lazy" decoding="async" src="assets/img/cat-modern.jpg" alt="Современная кухня">
+                        <div class="project-info">
+                            <span class="project-info-cat">Modern · Тверь</span>
+                            <h3>Минималистичная белая кухня</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Style accents -->
+<section class="section">
+    <div class="container">
+        <div class="section-head section-head--split">
+            <div>
+                <span class="eyebrow">Стилевые акценты</span>
+                <h2 class="section-title">Решения,<br>которые задают характер.</h2>
+            </div>
+            <p class="section-lede">
+                Массив дуба и ясеня, итальянские эмали и шпон премиум-класса, матовые и
+                глянцевые фасады, закалённое стекло, фурнитура BLUM и Hettich.
+            </p>
+        </div>
+
+        <div class="materials-grid">
+            <div class="material reveal">
+                <img src="assets/img/mat-wood.jpg" alt="Тёплая палитра" loading="lazy">
+                <span class="material-name">Тёплая палитра</span>
+            </div>
+            <div class="material reveal">
+                <img src="assets/img/mat-veneer.jpg" alt="Светлая гамма" loading="lazy">
+                <span class="material-name">Светлая гамма</span>
+            </div>
+            <div class="material reveal">
+                <img src="assets/img/mat-acrylic.jpg" alt="Глянцевые фасады" loading="lazy">
+                <span class="material-name">Глянцевые фасады</span>
+            </div>
+            <div class="material reveal">
+                <img src="assets/img/mat-glass.jpg" alt="Матовая отделка" loading="lazy">
+                <span class="material-name">Матовая отделка</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Process -->
+<section class="section section-dark">
+    <div class="container">
+        <div class="section-head section-head--split">
+            <div>
+                <span class="eyebrow">Процесс</span>
+                <h2 class="section-title">От первой встречи —<br>до последнего штриха.</h2>
+            </div>
+            <p class="section-lede">
+                Один дизайнер ведёт проект от эскиза до установки. Этапы прозрачны, сроки фиксируются договором.
+            </p>
+        </div>
+
+        <div class="process">
+            <div class="process-step reveal">
+                <div class="process-num">01 — Знакомство</div>
+                <h4>Бриф и замер</h4>
+                <p>Изучаем архитектуру, образ жизни и пожелания. Выезжаем на замер с инструментом.</p>
+            </div>
+            <div class="process-step reveal">
+                <div class="process-num">02 — Концепция</div>
+                <h4>Дизайн и материалы</h4>
+                <p>Предлагаем 1–2 концепции, согласовываем материалы, фурнитуру и сценарии хранения.</p>
+            </div>
+            <div class="process-step reveal">
+                <div class="process-num">03 — Производство</div>
+                <h4>Изготовление</h4>
+                <p>2–4 недели на собственной фабрике. Контроль качества на каждом этапе.</p>
+            </div>
+            <div class="process-step reveal">
+                <div class="process-num">04 — Установка</div>
+                <h4>Монтаж под ключ</h4>
+                <p>Аккуратная сборка, подключение техники, финальная настройка фасадов и фурнитуры.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA band -->
+<section class="cta-band">
+    <div class="cta-band-bg">
+        <img loading="lazy" decoding="async" src="assets/img/project-neoclassic.jpg" alt="">
+    </div>
+    <div class="container">
+        <div class="cta-inner">
+            <div class="reveal">
+                <span class="eyebrow">Дизайн-проект</span>
+                <h2>Получите концепцию вашей кухни — бесплатно.</h2>
+                <p>За 3 рабочих дня мы пришлём авторскую концепцию с планировкой, материалами и сметой.</p>
+            </div>
+            <div class="cta-actions reveal">
+                <a class="btn btn-primary" href="#contact">
+                    Заказать концепцию
+                    <svg class="btn-arrow" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M8 2l5 5-5 5"/></svg>
+                </a>
+                <span class="cta-meta">или позвоните — +7 (904) 025-21-81</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="section" id="contact">
+    <div class="container">
+        <div class="section-head section-head--split">
+            <div>
+                <span class="eyebrow">Контакты</span>
+                <h2 class="section-title">Расскажите о&nbsp;проекте.<br>Ответим в течение дня.</h2>
+            </div>
+            <p class="section-lede">
+                Заполните форму или напишите в мессенджер. Дизайнер свяжется с вами,
+                задаст уточняющие вопросы и предложит ближайшее время для встречи или замера.
+            </p>
+        </div>
+
+        <div class="contact-grid">
+            <form class="contact-form" id="contactForm" novalidate>
+                <div class="form-row">
+                    <div class="field">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" name="name" placeholder="Как к вам обращаться" required>
+                    </div>
+                    <div class="field">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com">
+                </div>
+                <div class="field">
+                    <label for="message">О проекте</label>
+                    <textarea id="message" name="message" placeholder="Кратко о задаче, метраже, сроках"></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">
+                        Отправить заявку
+                        <svg class="btn-arrow" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M8 2l5 5-5 5"/></svg>
+                    </button>
+                    <p class="form-disclaimer">
+                        Нажимая кнопку, вы соглашаетесь с обработкой персональных данных.
+                    </p>
+                </div>
+            </form>
+
+            <aside class="contact-info">
+                <div>
+                    <h4>Телефон</h4>
+                    <p><a href="tel:+79040252181">+7 (904) 025-21-81</a></p>
+                </div>
+                <div>
+                    <h4>E-mail</h4>
+                    <p><a href="mailto:hello@kuhni-forest.ru">hello@kuhni-forest.ru</a></p>
+                </div>
+                <div>
+                    <h4>Студии</h4>
+                    <p>Москва · Тверь<br>Пн–Пт 10:00–20:00, Сб 11:00–18:00</p>
+                </div>
+                <div>
+                    <h4>Мессенджеры</h4>
+                    <div class="contact-channels">
+                        <a class="channel" href="https://wa.me/79040252181" target="_blank" rel="noopener">WhatsApp</a>
+                        <a class="channel" href="https://t.me/+79040252181" target="_blank" rel="noopener">Telegram</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <a href="/" class="brand"><span>FOREST</span><span class="brand-mark">manufactory</span></a>
+                <p>Премиальная мебель на заказ. Авторский дизайн, собственное производство и установка под ключ — с 1994 года.</p>
+            </div>
+            <div class="footer-col">
+                <h5>Кухни</h5>
+                <ul>
+                    <li><a href="pages/katalog/modern.html">Современный стиль</a></li>
+                    <li><a href="pages/katalog/neoclassic.html">Неоклассика</a></li>
+                    <li><a href="pages/katalog/classic.html">Классика</a></li>
+                    <li><a href="pages/katalog/projects.html">Проекты</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Мебель</h5>
+                <ul>
+                    <li><a href="pages/mebel/living-rooms.html">Гостиные</a></li>
+                    <li><a href="pages/mebel/hallways.html">Прихожие</a></li>
+                    <li><a href="pages/mebel/wardrobes.html">Шкафы и гардеробные</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Контакты</h5>
+                <ul>
+                    <li><a href="tel:+79040252181">+7 (904) 025-21-81</a></li>
+                    <li><a href="mailto:hello@kuhni-forest.ru">hello@kuhni-forest.ru</a></li>
+                    <li><a href="https://wa.me/79040252181" target="_blank" rel="noopener">WhatsApp</a></li>
+                    <li><a href="https://t.me/+79040252181" target="_blank" rel="noopener">Telegram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 1994–2026 Фабрика мебели ФОРЕСТ</span>
+            <span>Все права защищены</span>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js?v=36"></script>
+</body>
+</html>
